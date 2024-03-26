@@ -1,0 +1,110 @@
+.current-weather-container {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.weather {
+  flex: auto;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 10px -2px 20px 2px rgba(2, 64, 95, 0.3);
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom,
+    #012a6c,
+    #05417d,
+    #0070bd,
+    #008bd2,
+    #00a7e4
+  );
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.weather-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+}
+
+.weather-icon {
+  width: 90px;
+}
+
+.temperature {
+  font-weight: 600;
+  font-size: 70px;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 10px 0;
+}
+
+.details {
+  width: 100%;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.parameter-label:first-child.header {
+  margin-bottom: 10px;
+}
+
+.parameter-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.parameter-label.top {
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .current-weather-container {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .weather {
+    flex: auto;
+    width: auto;
+  }
+}

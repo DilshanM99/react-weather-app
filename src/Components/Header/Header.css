@@ -1,0 +1,15 @@
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, #04398d, #0054a6, #0070bd, #008bd2, #00a7e4);
+    color: aliceblue;
+}
+.header-container img{
+    width: 100px;
+}
